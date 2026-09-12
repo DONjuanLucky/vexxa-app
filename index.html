@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VEXXA — Filth Protocol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>VEXXA</h1>
+        <p class="tag">Filth protocol · owner lock Kay-shawn · safeword <b>drop</b></p>
+      </div>
+      <div class="pills">
+        <span id="statusPill" class="pill">idle</span>
+        <span id="meterPill" class="pill hot">meter 8</span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <label>Meter <span id="meterVal">8</span>
+        <input id="meter" type="range" min="0" max="10" value="8" />
+      </label>
+      <label>Mode
+        <select id="mode">
+          <option>filthy</option>
+          <option>worship</option>
+          <option selected>dark</option>
+          <option>dominant</option>
+          <option>degrade</option>
+          <option>ear</option>
+          <option>coach</option>
+          <option>aftercare</option>
+        </select>
+      </label>
+      <label class="check"><input id="earMode" type="checkbox" checked /> ear-sounds</label>
+      <label class="check"><input id="autoVoice" type="checkbox" checked /> speak</label>
+      <label>Voice
+        <select id="voiceSel"></select>
+      </label>
+    </section>
+
+    <main id="log" class="log"></main>
+
+    <form id="form" class="dock">
+      <button type="button" id="mic" title="hold to talk">mic</button>
+      <input id="input" autocomplete="off" placeholder="tell her how dark, or just say wreck me…" />
+      <button type="submit" id="send">send</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
